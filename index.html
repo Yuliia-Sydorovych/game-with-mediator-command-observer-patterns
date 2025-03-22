@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slot Machine</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Slot Machine Game</h1>
+
+    <div class="reels-container">
+      <div id="reel-0" class="reel">🍒</div>
+      <div id="reel-1" class="reel">🍋</div>
+      <div id="reel-2" class="reel">🍉</div>
+    </div>
+
+    <div class="bet-buttons">
+      <button id="bet-1" class="bet-button">$1</button>
+      <button id="bet-3" class="bet-button">$3</button>
+      <button id="bet-5" class="bet-button">$5</button>
+      <button id="bet-10" class="bet-button">$10</button>
+  </div>
+  <input id="bet-amount" type="hidden" value="0">
+
+    <button id="spin-button" class="spin-button">Spin</button>
+    <div id="game-result" class="game-result">Press spin to begin!</div>
+    <button id="add-funds-button" class="add-funds-button">Add $100</button>
+    <div id="balance" class="balance"></div>
+  </div>
+
+  <script type="module" src="./dist/index.js"></script>
+</body>
+</html>
